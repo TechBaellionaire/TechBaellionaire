@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergency Relief Fund</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌍 Emergency Relief Fund</h1>
+      <p>Donate to support global emergencies with transparency and impact.</p>
+    </header>
+
+    <!-- Wallet Connection Button -->
+    <button id="connectWallet" onclick="connectWallet()">Connect Wallet</button>
+
+    <!-- Fund Balance Display -->
+    <div id="fundBalance" class="hidden">
+      <h2>Total Relief Fund: <span id="balance">0</span> ETH</h2>
+    </div>
+
+    <!-- Donation Form -->
+    <form id="donationForm" class="hidden" onsubmit="donateFunds(event)">
+      <label for="amount">Enter Donation Amount (ETH):</label>
+      <input type="number" id="amount" min="1" placeholder="Enter amount" required>
+      <button type="submit">Donate</button>
+    </form>
+
+    <!-- Footer -->
+    <footer>
+      <p>Powered by Base Blockchain | Ensuring Transparency & Accountability</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
